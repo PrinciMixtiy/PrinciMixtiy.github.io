@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components {
+    .nav-link {
+        @apply hover:text-emerald-300 font-bold;
+        @apply relative;
+        @apply inline-flex items-center justify-center;
+        @apply leading-normal no-underline transition;
+    }
+
+    .nav-link > span {
+        @apply absolute bottom-0 left-0 w-full h-0.5;
+        @apply bg-emerald-300;
+        @apply origin-bottom-right group-hover:origin-bottom-left;
+        @apply transform transition duration-200 ease-out;
+    }
+}
