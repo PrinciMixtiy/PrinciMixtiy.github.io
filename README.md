@@ -50,9 +50,4 @@
 
 ## To DO
 
-- Switch projects
-- Add links to icons
-- get current year
-- Add icon for section about
-- some background
 - send mail

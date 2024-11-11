@@ -65,7 +65,7 @@
             </div>
 
             <!-- Mobile menu, show/hide based on menu state. -->
-            <div x-show="isOpen" class="md:hidden" id="mobile-menu" style="display: none;">
+            <div x-show="isOpen" class="md:hidden" id="mobile-menu">
                 <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
                     <a href="#about" class="px-3 py-2 rounded-md group nav-link block">
                         About
@@ -88,15 +88,15 @@
         </nav>
 
         <!-- About Section -->
-        <section id="about" class="container mx-auto p-5 pt-20 min-h-screen relative">
+        <section id="about" class="section-container px-5">
 
-            <h2 class="text-3xl font-bold text-center mb-5">About Me</h2>
+            <h2 class="section-title">About Me</h2>
 
             <div class="flex flex-col md:flex-row gap-5 justify-between items-center mt-20">
                 <section class="flex-1">
                     <div
                         class="rounded-full overflow-hidden w-[300px] h-[300px] shadow-2xl border-2 border-emerald-300 mx-auto">
-                        <img src="images/photo.jpg" alt="my photo" class="w-full h-full object-cover">
+                        <img src="images/profile.jpg" alt="my photo" class="w-full h-full object-cover">
                     </div>
                 </section>
 
@@ -105,7 +105,7 @@
                         <svg class="absolute -top-10 -left-10 -z-10 rounded-full" xmlns="http://www.w3.org/2000/svg"
                             version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink"
                             xmlns:svgjs="http://svgjs.dev/svgjs" viewBox="0 0 800 800" width="200" height="200">
-                            <g stroke-width="3.5" stroke="rgba(0, 150, 150, 0.2)" fill="none">
+                            <g stroke-width="3.5" stroke="rgba(0, 150, 150, 0.4)" fill="none">
                                 <line x1="0" y1="0" x2="114.28571428571429" y2="114.28571428571429"></line>
                                 <line x1="114.28571428571429" y1="0" x2="0" y2="114.28571428571429"></line>
                                 <line x1="114.28571428571429" y1="0" x2="228.57142857142858" y2="114.28571428571429">
@@ -366,45 +366,39 @@
                     </p>
                     <h1 class="font-bold text-4xl">Rakotoarisoa Fanomezana Princi.</h1>
                     <p class="text-lg py-3">
-                        A passionate computer science student currently
-                        pursuing my degree at CNTEMAD. With a strong foundation in programming and a keen interest in
-                        software development, I am dedicated to building innovative solutions that solve real-world
-                        problems.
+                        Computer science student since 2022. Backend-focused developer with expertise in Python, specializing in web development and scripting to create efficient, scalable systems.
                     </p>
 
                     <div class="py-3 flex flex-col gap-2 justify-between items-center">
                         <ul class="flex gap-2 w-full justify-start flex-wrap">
                             <li>
-                                <a href="https://github.com/PrinciMixtiy" class="bg-zinc-800 text-emerald-300 hover:bg-emerald-300 hover:text-zinc-900 rounded py-1 px-3 flex justify-between items-center flex-nowrap">
-                                    <img src="./images/icons/github.png" alt="github" class="w-[30px]">
+                                <a href="https://github.com/PrinciMixtiy" class="hover:bg-zinc-800 hover:text-emerald-300 bg-emerald-300 text-zinc-900 rounded py-1 px-3 flex justify-between items-center flex-nowrap duration-150">
+                                    <svg height="30" aria-hidden="true" viewBox="0 0 24 24" version="1.1" width="30" data-view-component="true">
+                                        <path d="M12.5.75C6.146.75 1 5.896 1 12.25c0 5.089 3.292 9.387 7.863 10.91.575.101.79-.244.79-.546 0-.273-.014-1.178-.014-2.142-2.889.532-3.636-.704-3.866-1.35-.13-.331-.69-1.352-1.18-1.625-.402-.216-.977-.748-.014-.762.906-.014 1.553.834 1.769 1.179 1.035 1.74 2.688 1.25 3.349.948.1-.747.402-1.25.733-1.538-2.559-.287-5.232-1.279-5.232-5.678 0-1.25.445-2.285 1.178-3.09-.115-.288-.517-1.467.115-3.048 0 0 .963-.302 3.163 1.179.92-.259 1.897-.388 2.875-.388.977 0 1.955.13 2.875.388 2.2-1.495 3.162-1.179 3.162-1.179.633 1.581.23 2.76.115 3.048.733.805 1.179 1.825 1.179 3.09 0 4.413-2.688 5.39-5.247 5.678.417.36.776 1.05.776 2.128 0 1.538-.014 2.774-.014 3.162 0 .302.216.662.79.547C20.709 21.637 24 17.324 24 12.25 24 5.896 18.854.75 12.5.75Z"></path>
+                                    </svg>
                                     <span class="ml-3">Github</span>
                                 </a>
                             </li>
                             <li>
-                                <a href="https://github.com/PrinciMixtiy" class="bg-zinc-800 text-emerald-300 hover:bg-emerald-300 hover:text-zinc-900 rounded py-1 px-3 flex justify-between items-center flex-nowrap">
-                                    <img src="./images/icons/github.png" alt="github" class="w-[30px]">
-                                    <span class="ml-3">Github</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://github.com/PrinciMixtiy" class="bg-zinc-800 text-emerald-300 hover:bg-emerald-300 hover:text-zinc-900 rounded py-1 px-3 flex justify-between items-center flex-nowrap">
-                                    <img src="./images/icons/github.png" alt="github" class="w-[30px]">
-                                    <span class="ml-3">Github</span>
+                                <a href="https://roadmap.sh/u/princimixtiy" class="hover:bg-zinc-800 hover:text-emerald-300 bg-emerald-300 text-zinc-900 rounded py-1 px-3 flex justify-between items-center flex-nowrap duration-150">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 283 283" fill="#fff" xmlns:v="https://vecta.io/nano"><path fill="#000" d="M0 39C0 17.46 17.46 0 39 0h205c21.539 0 39 17.46 39 39v205c0 21.539-17.461 39-39 39H39c-21.54 0-39-17.461-39-39V39Z"></path><path d="M121.215 210.72c-1.867.56-4.854 1.12-8.96 1.68-3.92.56-8.027.84-12.32.84-4.107 0-7.84-.28-11.2-.84-3.174-.56-5.88-1.68-8.12-3.36s-4.014-3.92-5.32-6.72c-1.12-2.987-1.68-6.813-1.68-11.48v-84c0-4.293.746-7.933 2.24-10.92 1.68-3.173 4.013-5.973 7-8.4s6.626-4.573 10.92-6.44c4.48-2.053 9.24-3.827 14.28-5.32a106.176 106.176 0 0 1 15.68-3.36 95.412 95.412 0 0 1 16.24-1.4c8.96 0 16.053 1.773 21.28 5.32 5.226 3.36 7.84 8.96 7.84 16.8 0 2.613-.374 5.227-1.12 7.84-.747 2.427-1.68 4.667-2.8 6.72a133.1 133.1 0 0 0-12.04.56c-4.107.373-8.12.933-12.04 1.68s-7.654 1.587-11.2 2.52c-3.36.747-6.254 1.68-8.68 2.8v95.48zm45.172-22.4c0-7.84 2.426-14.373 7.28-19.6s11.48-7.84 19.88-7.84 15.026 2.613 19.88 7.84 7.28 11.76 7.28 19.6-2.427 14.373-7.28 19.6-11.48 7.84-19.88 7.84-15.027-2.613-19.88-7.84-7.28-11.76-7.28-19.6z"></path></svg>
+                                    <span class="ml-3">Roadmap.sh</span>
                                 </a>
                             </li>
                         </ul>
 
-                        <button
-                            class="hover:bg-zinc-800 hover:text-emerald-300 bg-emerald-300 text-zinc-900 rounded p-3 mt-5 font-bold text-nowrap hover:-translate-y-1 transition-transfor duration-200">
-                            <a href="">Download Resume</a>
-                        </button>
+                        <a
+                            class="hover:bg-zinc-800 hover:text-emerald-300 bg-emerald-300 text-zinc-900 rounded p-3 mt-5 font-bold text-nowrap hover:-translate-y-1 transition-transfor duration-200"
+                            href="resume.pdf" target="_blank">
+                            Download Resume
+                        </a>
                     </div>
 
                 </section>
 
             </div>
 
-            <p class="py-2 animate-bounce absolute bottom-0 w-full hidden md:flex md:justify-center">
+            <p class="go-down-btn">
                 <a href="#projects">
                     <svg width="60px" height="60px" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
@@ -417,8 +411,9 @@
         </section>
 
         <!-- Projects Section -->
-        <section x-data="projectsComponent()" id="projects" class="container mx-auto pt-20 relative min-h-screen">
-            <h2 class="text-3xl text-center font-bold px-3 md:px-0 mb-5">My Projects</h2>
+        <section x-data="projectsComponent()" id="projects" class="section-container">
+            
+            <h2 class="section-title">My Projects</h2>
 
             <div class="flex md:flex-row flex-col justify-center items-center mt-10">
                 <div class="flex justify-center">
@@ -429,9 +424,9 @@
                             x-transition:leave="transition ease-in duration-50 transform"
                             x-transition:leave-start="opacity-100 scale-100 translate-y-0"
                             x-transition:leave-end="opacity-0 scale-50 translate-y-8"
-                            class="bg-zinc-200 shadow-2xl flex flex-col md:flex-row min-h-[350px] max-w-[800px] m-2 border-2 border-emerald-300 relative">
+                            class="bg-zinc-200 shadow-2xl flex flex-col md:flex-row min-h-[400px] max-w-[800px] m-2 border-2 border-emerald-300 relative">
                             <p
-                                class="text-9xl text-zinc-200 font-extrabold bg-zinc-900 rounded-lg bg-opacity-95 absolute md:-top-10 md:-left-10 shadow">
+                                class="text-9xl p-2 text-zinc-200 font-extrabold backdrop-blur-xl bg-zinc-950/80 rounded-lg absolute md:-top-10 md:-left-10 shadow">
                                 <span x-text="formatProjectNumber(activePage + 1)"></span>
                             </p>
                             <div>
@@ -442,7 +437,7 @@
                                 <h3 class="text-xl font-bold mb-2 text-zinc-900" x-text="currentProject.title"></h3>
                                 <p class="text-gray-700 mb-4" x-text="currentProject.description"></p>
                                 <a :href="currentProject.link" class="text-blue-500 hover:underline">View Project</a>
-                                <p class="text-gray-500 mt-2">Technologies:
+                                <p class="text-gray-500 mt-2">Technologies: 
                                     <span x-text="currentProject.technologies"></span>
                                 </p>
                             </div>
@@ -462,7 +457,7 @@
                 </div>
             </div>
 
-            <p class="py-2 animate-bounce absolute bottom-0 w-full hidden md:flex md:justify-center">
+            <p class="go-down-btn">
                 <a href="#skills">
                     <svg width="60px" height="60px" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
@@ -474,16 +469,16 @@
         </section>
 
         <!-- Skills Section -->
-        <section id="skills" class="container mx-auto pt-20 min-h-screen relative">
+        <section id="skills" class="section-container">
 
-            <h2 class="text-3xl text-center font-bold mb-5 px-3 md:px-0">My Skills</h2>
+            <h2 class="section-title">My Skills</h2>
 
             <div class="flex lg:flex-row flex-col gap-10 justify-around py-7 md:rounded max-w-full mt-10">
 
-                <div class="flex flex-col gap-5 p-10 bg-zinc-800 rounded flex-1">
-                    <h2 class="font-bold text-xl text-center">Programming Languages</h2>
-                    <div class="flex  justify-center gap-2 max-w-full flex-wrap">
-                        <div class="flex flex-col justify-center items-center">
+                <div class="skills-container">
+                    <h2 class="skills-title">Programming Languages</h2>
+                    <div class="skills-items-container">
+                        <div class="skills-item">
                             <svg width="60px" height="60px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
                                 <linearGradient id="python-original-a" gradientUnits="userSpaceOnUse" x1="70.252"
                                     y1="1237.476" x2="170.659" y2="1151.089"
@@ -514,7 +509,7 @@
                             </svg>
                             <span>Python</span>
                         </div>
-                        <div class="flex flex-col justify-center items-center">
+                        <div class="skills-item">
                             <svg width="60px" height="60px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
                                 <path fill="#0074BD"
                                     d="M47.617 98.12s-4.767 2.774 3.397 3.71c9.892 1.13 14.947.968 25.845-1.092 0 0 2.871 1.795 6.873 3.351-24.439 10.47-55.308-.607-36.115-5.969zm-2.988-13.665s-5.348 3.959 2.823 4.805c10.567 1.091 18.91 1.18 33.354-1.6 0 0 1.993 2.025 5.132 3.131-29.542 8.64-62.446.68-41.309-6.336z" />
@@ -529,7 +524,7 @@
                             </svg>
                             <span>Java</span>
                         </div>
-                        <div class="flex flex-col justify-center items-center">
+                        <div class="skills-item">
                             <svg width="60px" height="60px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
                                 <path fill="#F0DB4F" d="M1.408 1.408h125.184v125.185H1.408z" />
                                 <path fill="#323330"
@@ -537,7 +532,7 @@
                             </svg>
                             <span>Javascript</span>
                         </div>
-                        <div class="flex flex-col justify-center items-center">
+                        <div class="skills-item">
                             <svg width="60px" height="60px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
                                 <path fill="#d1d1d1"
                                     d="M51.395 24.879c-27.422 0-49.649-3.832-49.649-8.535v92.261c0 4.727 22.227 8.536 49.649 8.536 27.421 0 49.648-3.832 49.648-8.536V16.29c0 4.758-22.227 8.59-49.648 8.59Zm0 0" />
@@ -553,7 +548,7 @@
                             </svg>
                             <span>SQL</span>
                         </div>
-                        <div class="flex flex-col justify-center items-center">
+                        <div class="skills-item">
                             <svg width="60px" height="60px" viewBox="-16 0 256 256" version="1.1"
                                 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                                 preserveAspectRatio="xMidYMid">
@@ -585,10 +580,10 @@
                     </div>
                 </div>
 
-                <div class="flex flex-col gap-5 p-10 bg-zinc-800 rounded flex-1">
-                    <h2 class="font-bold text-xl text-center">Frameworks and Libraries</h2>
-                    <div class="flex justify-center gap-2 max-w-full flex-wrap">
-                        <div class="flex flex-col justify-center items-center">
+                <div class="skills-container">
+                    <h2 class="skills-title">Frameworks and Libraries</h2>
+                    <div class="skills-items-container">
+                        <div class="skills-item">
                             <svg width="60px" height="60px" xmlns="http://www.w3.org/2000/svg"
                                 aria-label="Django Project" role="img" viewBox="0 0 512 512">
                                 <rect width="512" height="512" rx="15%" fill="#113228" />
@@ -597,7 +592,7 @@
                             </svg>
                             <span>Django</span>
                         </div>
-                        <div class="flex justify-center items-center flex-col">
+                        <div class="skills-item">
                             <svg width="60px" height="60px" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"
                                 xmlns:xlink="http://www.w3.org/1999/xlink">
                                 <defs>
@@ -631,7 +626,7 @@
                             </svg>
                             <span>Kivy</span>
                         </div>
-                        <div class="flex flex-col justify-center items-center">
+                        <div class="skills-item">
                             <svg width="60px" height="60px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
                                 <path fill="#4DABCF"
                                     d="m55.012 26.006-21.38-10.789L10.154 26.93l21.969 11.027Zm9.808 4.951L87.241 42.28 63.982 53.955l-22-11.043Zm29.948-15.581 23.037 11.552L97.2 37.272 74.735 25.938ZM84.853 10.4 64.113 0 43.598 10.24 64.97 21.014ZM68.64 99.702V128l25.122-12.537-.023-28.31ZM93.727 77.27l-.028-28.012-25.06 12.458V89.74Zm30.158-5.246v28.41l-21.43 10.69-.017-28.279zm0-9.935V34.25l-21.47 10.673.016 28.068z" />
@@ -640,7 +635,7 @@
                             </svg>
                             <span>Numpy</span>
                         </div>
-                        <div class="flex flex-col justify-center items-center">
+                        <div class="skills-item">
                             <svg width="60px" height="60px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
                                 <path fill="#130754"
                                     d="M46.236 7.567h13.99v29.047h-13.99Zm0 59.668h13.99V96.28h-13.99Z" />
@@ -652,7 +647,7 @@
                             </svg>
                             <span>Pandas</span>
                         </div>
-                        <div class="flex flex-col justify-center items-center">
+                        <div class="skills-item">
                             <svg width="60px" height="60px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
                                 <path
                                     d="M64.004 25.602c-17.067 0-27.73 8.53-32 25.597 6.398-8.531 13.867-11.73 22.398-9.597 4.871 1.214 8.352 4.746 12.207 8.66C72.883 56.629 80.145 64 96.004 64c17.066 0 27.73-8.531 32-25.602-6.399 8.536-13.867 11.735-22.399 9.602-4.87-1.215-8.347-4.746-12.207-8.66-6.27-6.367-13.53-13.738-29.394-13.738zM32.004 64c-17.066 0-27.73 8.531-32 25.602C6.402 81.066 13.87 77.867 22.402 80c4.871 1.215 8.352 4.746 12.207 8.66 6.274 6.367 13.536 13.738 29.395 13.738 17.066 0 27.73-8.53 32-25.597-6.399 8.531-13.867 11.73-22.399 9.597-4.87-1.214-8.347-4.746-12.207-8.66C55.128 71.371 47.868 64 32.004 64zm0 0"
@@ -660,7 +655,7 @@
                             </svg>
                             <span>TailwindCSS</span>
                         </div>
-                        <div class="flex flex-col justify-center items-center">
+                        <div class="skills-item">
                             <svg width="60px" height="60px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
                                 <path
                                     d="M0 8.934l49.854.158 14.167 24.47 14.432-24.47L128 8.935l-63.834 110.14zm126.98.637l-24.36.02-38.476 66.053L25.691 9.592.942 9.572l63.211 107.89zm-25.149-.008l-22.745.168-15.053 24.647L49.216 9.73l-22.794-.168 37.731 64.476zm-75.834-.17l23.002.009m-23.002-.01l23.002.01"
@@ -675,24 +670,24 @@
                     </div>
                 </div>
 
-                <div class="flex flex-col gap-5 p-10 bg-zinc-800 rounded flex-1">
-                    <h2 class="font-bold text-xl text-center">Others</h2>
-                    <div class="flex justify-center gap-2 max-w-full flex-wrap">
-                        <div class="flex flex-col justify-center items-center">
+                <div class="skills-container">
+                    <h2 class="skills-title">Others</h2>
+                    <div class="skills-items-container">
+                        <div class="skills-item">
                             <svg width="60px" height="60px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
                                 <path fill-rule="evenodd" fill="#ffffff" clip-rule="evenodd"
                                     d="M113.823 104.595c-1.795-1.478-3.629-2.921-5.308-4.525-1.87-1.785-3.045-3.944-2.789-6.678.147-1.573-.216-2.926-2.113-3.452.446-1.154.864-1.928 1.033-2.753.188-.92.178-1.887.204-2.834.264-9.96-3.334-18.691-8.663-26.835-2.454-3.748-5.017-7.429-7.633-11.066-4.092-5.688-5.559-12.078-5.633-18.981a47.564 47.564 0 00-1.081-9.475C80.527 11.956 77.291 7.233 71.422 4.7c-4.497-1.942-9.152-2.327-13.901-1.084-6.901 1.805-11.074 6.934-10.996 14.088.074 6.885.417 13.779.922 20.648.288 3.893-.312 7.252-2.895 10.34-2.484 2.969-4.706 6.172-6.858 9.397-1.229 1.844-2.317 3.853-3.077 5.931-2.07 5.663-3.973 11.373-7.276 16.5-1.224 1.9-1.363 4.026-.494 6.199.225.563.363 1.429.089 1.882-2.354 3.907-5.011 7.345-10.066 8.095-3.976.591-4.172 1.314-4.051 5.413.1 3.337.061 6.705-.28 10.021-.363 3.555.008 4.521 3.442 5.373 7.924 1.968 15.913 3.647 23.492 6.854 3.227 1.365 6.465.891 9.064-1.763 2.713-2.771 6.141-3.855 9.844-3.859 6.285-.005 12.572.298 18.86.369 1.702.02 2.679.653 3.364 2.199.84 1.893 2.26 3.284 4.445 3.526 4.193.462 8.013-.16 11.19-3.359 3.918-3.948 8.436-7.066 13.615-9.227 1.482-.619 2.878-1.592 4.103-2.648 2.231-1.922 2.113-3.146-.135-5zM62.426 24.12c.758-2.601 2.537-4.289 5.243-4.801 2.276-.43 4.203.688 5.639 3.246 1.546 2.758 2.054 5.64.734 8.658-1.083 2.474-1.591 2.707-4.123 1.868-.474-.157-.937-.343-1.777-.652.708-.594 1.154-1.035 1.664-1.382 1.134-.772 1.452-1.858 1.346-3.148-.139-1.694-1.471-3.194-2.837-3.175-1.225.017-2.262 1.167-2.4 2.915-.086 1.089.095 2.199.173 3.589-3.446-1.023-4.711-3.525-3.662-7.118zm-12.75-2.251c1.274-1.928 3.197-2.314 5.101-1.024 2.029 1.376 3.547 5.256 2.763 7.576-.285.844-1.127 1.5-1.716 2.241l-.604-.374c-.23-1.253-.276-2.585-.757-3.733-.304-.728-1.257-1.184-1.919-1.762-.622.739-1.693 1.443-1.757 2.228-.088 1.084.477 2.28.969 3.331.311.661 1.001 1.145 1.713 1.916l-1.922 1.51c-3.018-2.7-3.915-8.82-1.871-11.909zM87.34 86.075c-.203 2.604-.5 2.713-3.118 3.098-1.859.272-2.359.756-2.453 2.964a101.744 101.744 0 00-.012 7.753c.061 1.77-.537 3.158-1.755 4.393-6.764 6.856-14.845 10.105-24.512 8.926-4.17-.509-6.896-3.047-9.097-6.639.98-.363 1.705-.607 2.412-.894 3.122-1.27 3.706-3.955 1.213-6.277-1.884-1.757-3.986-3.283-6.007-4.892-1.954-1.555-3.934-3.078-5.891-4.629-1.668-1.323-2.305-3.028-2.345-5.188-.094-5.182.972-10.03 3.138-14.747 1.932-4.209 3.429-8.617 5.239-12.885.935-2.202 1.906-4.455 3.278-6.388 1.319-1.854 2.134-3.669 1.988-5.94-.084-1.276-.016-2.562-.016-3.843l.707-.352c1.141.985 2.302 1.949 3.423 2.959 4.045 3.646 7.892 3.813 12.319.67 1.888-1.341 3.93-2.47 5.927-3.652.497-.294 1.092-.423 1.934-.738 2.151 5.066 4.262 10.033 6.375 15 1.072 2.524 1.932 5.167 3.264 7.547 2.671 4.775 4.092 9.813 4.07 15.272-.012 2.83.137 5.67-.081 8.482z" />
                             </svg>
                             <span>Linux</span>
                         </div>
-                        <div class="flex flex-col justify-center items-center">
+                        <div class="skills-item">
                             <svg width="60px" height="60px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
                                 <path fill="#F34F29"
                                     d="M124.737 58.378L69.621 3.264c-3.172-3.174-8.32-3.174-11.497 0L46.68 14.71l14.518 14.518c3.375-1.139 7.243-.375 9.932 2.314 2.703 2.706 3.461 6.607 2.294 9.993l13.992 13.993c3.385-1.167 7.292-.413 9.994 2.295 3.78 3.777 3.78 9.9 0 13.679a9.673 9.673 0 01-13.683 0 9.677 9.677 0 01-2.105-10.521L68.574 47.933l-.002 34.341a9.708 9.708 0 012.559 1.828c3.778 3.777 3.778 9.898 0 13.683-3.779 3.777-9.904 3.777-13.679 0-3.778-3.784-3.778-9.905 0-13.683a9.65 9.65 0 013.167-2.11V47.333a9.581 9.581 0 01-3.167-2.111c-2.862-2.86-3.551-7.06-2.083-10.576L41.056 20.333 3.264 58.123a8.133 8.133 0 000 11.5l55.117 55.114c3.174 3.174 8.32 3.174 11.499 0l54.858-54.858a8.135 8.135 0 00-.001-11.501z" />
                             </svg>
                             <span>Git</span>
                         </div>
-                        <div class="flex flex-col justify-center items-center">
+                        <div class="skills-item">
                             <svg width="60px" height="60px" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
                                 <circle cx="512" cy="512" r="512" style="fill:#0091e2" />
                                 <path
@@ -701,7 +696,7 @@
                             </svg>
                             <span>Docker</span>
                         </div>
-                        <div class="flex flex-col justify-center items-center">
+                        <div class="skills-item">
                             <svg width="60px" height="60px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
                                 <path
                                     d="M93.809 92.112c.785-6.533.55-7.492 5.416-6.433l1.235.108c3.742.17 8.637-.602 11.513-1.938 6.191-2.873 9.861-7.668 3.758-6.409-13.924 2.873-14.881-1.842-14.881-1.842 14.703-21.815 20.849-49.508 15.543-56.287-14.47-18.489-39.517-9.746-39.936-9.52l-.134.025c-2.751-.571-5.83-.912-9.289-.968-6.301-.104-11.082 1.652-14.709 4.402 0 0-44.683-18.409-42.604 23.151.442 8.841 12.672 66.898 27.26 49.362 5.332-6.412 10.484-11.834 10.484-11.834 2.558 1.699 5.622 2.567 8.834 2.255l.249-.212c-.078.796-.044 1.575.099 2.497-3.757 4.199-2.653 4.936-10.166 6.482-7.602 1.566-3.136 4.355-.221 5.084 3.535.884 11.712 2.136 17.238-5.598l-.22.882c1.474 1.18 1.375 8.477 1.583 13.69.209 5.214.558 10.079 1.621 12.948 1.063 2.868 2.317 10.256 12.191 8.14 8.252-1.764 14.561-4.309 15.136-27.985" />
@@ -714,7 +709,7 @@
                             </svg>
                             <span>Postgresql</span>
                         </div>
-                        <div class="flex flex-col justify-center items-center">
+                        <div class="skills-item">
                             <svg width="60px" height="60px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
                                 <path fill-rule="evenodd" clip-rule="evenodd" fill="#439934"
                                     d="M88.038 42.812c1.605 4.643 2.761 9.383 3.141 14.296.472 6.095.256 12.147-1.029 18.142-.035.165-.109.32-.164.48-.403.001-.814-.049-1.208.012-3.329.523-6.655 1.065-9.981 1.604-3.438.557-6.881 1.092-10.313 1.687-1.216.21-2.721-.041-3.212 1.641-.014.046-.154.054-.235.08l.166-10.051-.169-24.252 1.602-.275c2.62-.429 5.24-.864 7.862-1.281 3.129-.497 6.261-.98 9.392-1.465 1.381-.215 2.764-.412 4.148-.618z" />
@@ -751,7 +746,7 @@
                             </svg>
                             <span>MongoDB</span>
                         </div>
-                        <div class="flex flex-col justify-center items-center">
+                        <div class="skills-item">
                             <svg width="60px" height="60px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
                                 <path fill="#A41E11"
                                     d="M121.8 93.1c-6.7 3.5-41.4 17.7-48.8 21.6-7.4 3.9-11.5 3.8-17.3 1S13 98.1 6.3 94.9c-3.3-1.6-5-2.9-5-4.2V78s48-10.5 55.8-13.2c7.8-2.8 10.4-2.9 17-.5s46.1 9.5 52.6 11.9v12.5c0 1.3-1.5 2.7-4.9 4.4z" />
@@ -777,7 +772,7 @@
                 </div>
             </div>
 
-            <p class="py-2 animate-bounce absolute bottom-0 w-full hidden md:flex md:justify-center">
+            <p class="go-down-btn">
                 <a href="#contact">
                     <svg width="60px" height="60px" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
@@ -789,16 +784,16 @@
         </section>
 
         <!-- Contact Section -->
-        <section id="contact" class="container mx-auto p-5 pt-20 min-h-screen">
+        <section id="contact" class="section-container">
 
-            <h2 class="text-3xl font-bold mb-5 px-3 md:px-0 text-center">Contact Me</h2>
+            <h2 class="section-title">Contact Me</h2>
 
             <div class="flex flex-col md:flex-row justify-around items-center gap-5 mt-10">
 
                 <div class="flex flex-col gap-3">
                     <p class="text-lg">Feel free to reach out to me at:</p>
                     <p class="font-bold text-lg">
-                        <a href="" class="flex items-center gap-2">
+                        <a href="mailto:" class="flex items-center gap-2">
                             <svg width="30px" height="30px" viewBox="0 0 24 24" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd" clip-rule="evenodd"
@@ -809,7 +804,7 @@
                         </a>
                     </p>
                     <p class="font-bold text-lg">
-                        <a href="" class="flex items-center gap-2">
+                        <a href="#contact" class="flex items-center gap-2">
                             <svg width="30px" height="30px" viewBox="-10.53 0 63.183 63.183"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <g id="Group_32" data-name="Group 32" transform="translate(-509.305 -316.817)">
@@ -836,11 +831,13 @@
                 </div>
 
                 <div class="max-w-full">
-                    <form action="" class="grid gap-3 p-8 backdrop-blur-xl bg-zinc-950/80 rounded">
+                    <form id="contact-form" class="grid gap-3 p-8 backdrop-blur-xl bg-zinc-950/80 rounded">
+                        <input type="text" class="block bg-zinc-800 rounded text-zinc-400 outline-none p-5 w-full"
+                            name="from_name" id="name" placeholder="Your Name" required>
                         <input type="email" class="block bg-zinc-800 rounded text-zinc-400 outline-none p-5 w-full"
-                            name="email" id="email" placeholder="your-email@domain.com" required disabled>
+                            name="from_email" id="email" placeholder="your-email@domain.com" required>
                         <textarea name="message" class="block bg-zinc-800 rounded text-zinc-400 outline-none p-5 w-full"
-                            id="message" cols="40" rows="5" placeholder="Hi Princi!" required disabled></textarea>
+                            id="message" cols="40" rows="5" placeholder="Hi Princi!" required></textarea>
                         <input
                             class="w-full hover:bg-zinc-800 hover:text-emerald-300 bg-emerald-300 text-zinc-900 rounded p-3 font-bold cursor-pointer"
                             type="submit" value="Send Message">
@@ -874,6 +871,30 @@
     </div>
 
     <script src="scripts/script.js"></script>
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script src="config.js"></script>
+
+    <script>
+        (function() {
+            emailjs.init(EMAILJS_USER_ID);
+        })();
+
+        document.getElementById("contact-form").addEventListener("submit", function(event) {
+            event.preventDefault();
+        
+            // Get the form element itself, not the FormData
+            const form = document.getElementById("contact-form");
+        
+            // Send the form directly to emailjs
+            emailjs.sendForm(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, form)
+                .then(function(response) {
+                    alert("Email sent successfully!");
+                }, function(error) {
+                    alert("Error sending email: " + error.text);
+                });
+        });        
+          
+    </script>
 
 </body>
 
