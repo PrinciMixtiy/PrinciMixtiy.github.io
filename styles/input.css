@@ -34,7 +34,7 @@
 
     /* Skills Section */
     .skills-container {
-        @apply flex flex-col gap-5 p-10 backdrop-blur-xl bg-zinc-950/80 rounded flex-1;
+        @apply flex flex-col gap-5 p-10 bg-zinc-950 rounded flex-1;
     }
 
     .skills-title {
